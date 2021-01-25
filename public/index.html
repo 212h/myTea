@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="renderer" content="webkit">
+  <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <script src="js/jquery.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/product_detail.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/header_1.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common_banner.css">
+ </head>
+ <body>
+  <div class="main" id="main">
+      <!--页面头部-->
+      <header id="header"></header>
+      <!--固定背景图-->
+      <div class="bgImg">
+
+          <!--广告轮播——用bootstrap写-->
+          <div id="demo" class="carousel" data-ride="carousel">
+              <!--指示器-->
+              <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              <!--轮播图片-->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <a href="product_details.html?lid=1">
+                          <img src="img/index/banner/bg1.png" class="banner_img">
+                      </a>
+                      
+                  </div>
+                  <div class="carousel-item">
+                      <a href="product_details.html?lid=18">
+                          <img src="img/index/banner/bg2.png" class="banner_img">
+                      </a>
+                      
+                  </div>
+                  <div class="carousel-item">
+                      <a href="product_details.html?lid=23">
+                          <img src="img/index/banner/bg3.png" class="banner_img">
+                      </a>
+                      
+                  </div>
+              </div>
+              <!--指示箭头-->
+              <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a href="#demo" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+          <!--广告轮播注释掉的准备用js写-->
+          <!--<div class="banner">-->
+              <!--&lt;!&ndash;1.banner广告图&ndash;&gt;-->
+              <!--<ul class="bannerImg">-->
+                  <!--<li><a href="product_details.html?lid=1"><img src="img/index/banner/bg1.png " alt=""/></a></li>-->
+                  <!--<li><a href="product_details.html?lid=18"><img src="img/index/banner/bg2.png " alt=""/></a></li>-->
+                  <!--<li><a href="product_details.html?lid=23"><img src="img/index/banner/bg3.png " alt=""/></a></li>-->
+              <!--</ul>-->
+              <!--&lt;!&ndash;2.左右方向按钮&ndash;&gt;-->
+              <!--<a href="#" class="ckSide ckLeft"></a>-->
+              <!--<a href="#" class="ckSide ckRight"></a>-->
+              <!--&lt;!&ndash;3.导航小圆点&ndash;&gt;-->
+              <!--<ul class="ind">-->
+                  <!--<li class="active"></li>-->
+                  <!--<li></li>-->
+                  <!--<li></li>-->
+              <!--</ul>-->
+          <!--</div>-->
+          <!--茶叶种类-->
+          <div class="list">
+              <div>
+                  <div>
+                      <p class="p animated pulse infinite">茶叶种类</p>
+                      <p class="animated pulse infinite">Tea types</p>
+                  </div>
+                  <div>
+                      <ul>
+                          <li><a href="products.html?kw="><span class="animated pulse infinite">全部</span><b>|</b></a></li>
+                          <li><a href="products.html?kw=红茶"><span class="animated pulse infinite">红茶</span><b>|</b></a></li>
+                          <li><a href="products.html?kw=碧螺春"><span class="animated pulse infinite">绿茶</span><b>|</b></a></li>
+                          <li><a href="products.html?kw=龙井茶"><span class="animated pulse infinite">龙井茶</span><b>|</b></a></li>
+                          <li><a href="products.html?kw=乌龙茶"><span class="animated pulse infinite">乌龙茶</span></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!--1F-->
+          <div class="floor_F">
+                <h3 class="bg-white"><img src="img/index/f1.png" class="animated swing infinite">首页推荐 /1F</h3>
+                <div id="f1">     
+                    <div class="imgContain">
+                        <!--模板
+                        <div>
+                            <img src="img/index/1.jpg" alt="div" class="transition_linear"/>
+                            <div><a href="product_details.html?lid=1">碧螺春茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/2.jpg" alt="div"/>
+                            <div><a href="#">庐山云雾</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/3.jpg" alt="div"/>
+                            <div><a href="#">阿萨姆红茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/4.jpg" alt="div"/>
+                            <div><a href="#">乌龙茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/5.jpg" alt="div"/>
+                            <div><a href="#">龙井茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/6.jpg" alt="div"/>
+                            <div><a href="#">西湖龙井茶</a></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+          </div>
+          <!--2F-->
+          <div class="floor_F">
+                <h3 class="bg-white pt-4"><img src="img/index/f2.png" class="animated swing infinite">最新上架 /2F</h3>
+                <div id="f2">     
+                    <div class="imgContain">
+                        <!--模板
+                        <div>
+                            <img src="img/index/1.jpg" alt="div" class="transition_linear"/>
+                            <div><a href="product_details.html?lid=1">碧螺春茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/2.jpg" alt="div"/>
+                            <div><a href="#">庐山云雾</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/3.jpg" alt="div"/>
+                            <div><a href="#">阿萨姆红茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/4.jpg" alt="div"/>
+                            <div><a href="#">乌龙茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/5.jpg" alt="div"/>
+                            <div><a href="#">龙井茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/6.jpg" alt="div"/>
+                            <div><a href="#">西湖龙井茶</a></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+          </div>
+          <!--3F-->
+          <div class="floor_F">
+                <h3 class="bg-white pt-4 "><img src="img/index/f3.png" class="animated swing infinite">热销商品 /3F</h3>
+                <div id="f3">     
+                    <div class="imgContain">
+                        <!--模板
+                        <div>
+                            <img src="img/index/1.jpg" alt="div" class="transition_linear"/>
+                            <div><a href="product_details.html?lid=1">碧螺春茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/2.jpg" alt="div"/>
+                            <div><a href="#">庐山云雾</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/3.jpg" alt="div"/>
+                            <div><a href="#">阿萨姆红茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/4.jpg" alt="div"/>
+                            <div><a href="#">乌龙茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/5.jpg" alt="div"/>
+                            <div><a href="#">龙井茶</a></div>
+                        </div>
+                        <div>
+                            <img src="img/index/6.jpg" alt="div"/>
+                            <div><a href="#">西湖龙井茶</a></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+          </div>
+          <!--楼层二-->
+          <div class="floorTwo">
+              <div>
+                  <img src="img/index/7.jpg" />
+                  <div>
+                      <p class="animated pulse infinite">中国茶文化是中国制茶、饮茶的文化。作为开门七件事（柴米油盐酱醋茶）之一，饮茶在古代中国是非常普遍的。中国的茶文化与欧美或日本的茶文化的分别很大。中华茶文化源远流长，博大精深，不但包含物质文化层面，还包含深厚的精神文明层次......</p>
+                      <p><a href="products.html?kw=" class="box_shadow animated pulse infinite">More</a></p>
+                  </div>
+              </div>
+          </div>
+          <!--楼层三-->
+          <div class="imgThree_prev">
+              <div class="imgThree">
+                  <div>
+                      <a href="products.html?kw="><img src="img/index/9.png " /></a>
+                      <img src="img/index/10.png" />
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--楼层滚动-->
+      <div class="btn-group-vertical position-fixed d-none" role="group" aria-label="Basic example">
+        <button type="button" class="rounded btn  btn-info btn-sm border-light border-left-0 border-right-0 animated pulse infinite">首页<br>推荐</button>
+        <button type="button" class="rounded btn btn-info btn-sm border-light border-left-0 border-right-0 animated pulse infinite">最新<br>上架</button>
+        <button type="button" class="rounded btn btn-info btn-sm border-light border-left-0 border-right-0 animated pulse infinite">热销<br>单品</button>
+        <div type="button" class="rounded animated pulse infinite"><a href="#" style="color:#fff;" class="rounded btn btn-info btn-sm border-light border-left-0 border-right-0">回到<br>顶部</a></div> 
+      </div>
+  </div>
+  <div class="container px-0" style="overflow:hidden;width:1044px;">
+      <ul class="list-unstyled clearfix text-center" style="width:1740px;">
+          <li class="list-item float-left m-auto animated pulse infinite" style="width:348px;"><a href="products.html?kw=碧螺春"><img src="img/index/11.jpg"></a></li>
+          <li class="list-item float-left m-auto animated pulse infinite" style="width:348px;"><a href="products.html?kw=铁观音"><img src="img/index/12.jpg"></a></li>
+          <li class="list-item float-left m-auto animated pulse infinite"  style="width:348px;"><a href="products.html?kw=庐山云雾"><img src="img/index/13.jpg"></a></li>
+          <li class="list-item float-left m-auto animated pulse infinite" style="width:348px;"><a href="products.html?kw=龙井茶"><img src="img/index/14.jpg"></a></li>
+          <li class="list-item float-left m-auto animated pulse infinite" style="width:348px;"><a href="products.html?kw=乌龙茶"><img src="img/index/15.jpg"></a></li>
+      </ul>
+  </div>
+<!--   <div class="main"> -->
+<!--       <video src="img/video/birds.mp4" controls preload="metadata" id="video_birds"></video> -->
+<!--   </div> -->
+  <!--引入页面底部-->
+  <div class="text-center">
+      <footer id="footer" class="w-100 m-auto"></footer>
+  </div>
+
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/index.js"></script>
+ </body>
+</html>

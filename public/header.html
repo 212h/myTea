@@ -1,0 +1,99 @@
+
+<header id="header" class="container mb-4">
+	<!--顶部：logo,搜索框,登陆注册的列表-->
+	<nav class="navbar navbar-light header_top">
+		<!--右侧logo图标-->
+		<a href="index.html" class="navbar-brand logo animated pulse infinite mr-0">
+			<img src="img/header/logo.png">
+		</a>
+		<!--中间搜索框外面的div-->
+		<div>
+			<!--搜索框-->
+			<input type="text" placeholder="请输入您要搜索的茶叶品牌"  class="txt_search small" id="txt_search">
+			<!--分类搜索-->
+			<a href="products.html?kw=" class="sort_search">分类搜索</a>
+			<!--放大镜的搜索图片-->
+			<span>
+				<img src="img/header/seach_2.png" class="search_img animated pulse infinite">
+			</span>
+			<!--倒三角-->
+			<span class="caret"></span>
+		</div>
+		<!--右侧列表-->
+		<!--没有登陆的样子，注销之后的样子,,,,,根据这个人有没有登陆来动态决定让谁显示，让谁不显示-->
+		<nav id="signout" class="my-2 my-md-0 mr-md-3 small">
+        <a class="p-1 text-muted" href="register.html">注册</a>
+        <b class="p-1 text-muted" >|</b>
+        <a class="p-1 text-muted" id="btnLogin" href="#">登录</a>
+      </nav>
+			<!--登陆之后的样子-->
+      <nav id="signin" class="my-2 my-md-0 mr-md-3 small">
+        <a class="p-1" href="#" title="我的收藏">
+          <img src="img/header/care.png">
+        </a>
+        <b class="p-1">|</b>
+        <a class="p-1" href="#" title="我的订单">
+          <img src="img/header/order.png">
+        </a>
+        <b class="p-1">|</b>
+        <a class="p-1" href="cart.html" title="我的购物车">
+          <img src="img/header/shop_car.png" alt="">
+        </a>
+        <a class="p-1 text-muted" href="#">欢迎<span id="uname">dangdang</span></a>
+        <a class="p-1 text-muted" id="btnSignout" href="javascript:;">注销</a>
+      </nav>
+	</nav>
+	<!--页面主导航-->
+	<ul class="nav main">
+		<li>
+			<div class="contain_1 text-center">
+				<a href="index.html" class="index" class="margin:0 auto;">首页</a>
+				<div class="hover_1" class="margin:0 auto;">Home</div>
+			</div>
+		</li>
+		<li>
+			<div class="contain_2 dropdown">
+				<a href="#" data-trigger="dropdown" style="cursor:wait">茶叶品牌</a>
+				<div class="hover_2 text-center dropdown">
+					<div class="margin:0 auto;">Tea brand</div>
+					<ul class="text-center text-muted" >
+						<li class="text-center"><a href="products.html?kw=">全部</a></li>
+						<li><a href="products.html?kw=红茶">红茶</a></li>
+						<li><a href="products.html?kw=碧螺春">绿茶</a></li>
+						<li><a href="products.html?kw=龙井茶">龙井茶</a></li>
+						<li><a href="products.html?kw=乌龙茶">乌龙茶</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--<div class="dropdown">-->
+				<!--<a data-trigger="dropdown" href="#">茶叶品牌</a>-->
+				<!--<ul class="dropdown-menu " style="width:50px !important;" >-->
+					<!--<li><a href="#">全部</a></li>-->
+					<!--<li><a href="#">红茶</a></li>-->
+					<!--<li><a href="#">绿茶</a></li>-->
+					<!--<li><a href="#">龙井茶</a></li>-->
+					<!--<li><a href="#">乌龙茶</a></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!---->
+		</li>
+		<li>
+			<div  class="contain_2 text-center">
+				<a href="product_method.html" class="margin:0 auto;">冲泡方法</a>
+				<div class="hover_3" class="margin:0 auto;">
+					<div>method</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div  class="contain_game text-center">
+				<a href="indexGame.html" class="margin:0 auto; px-0">休闲小游戏</a>
+				<div class="hover_3" class="margin:0 auto;">
+					<div style="width:80px;">Tiny Game</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</header>
+
+

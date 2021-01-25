@@ -1,0 +1,77 @@
+/*****设置通用样式*****/
+body,html,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+body{
+	font:16px "simhei",Arial;
+	color:#666;
+}
+ol,ul{
+	list-style:none;
+}
+a{
+	color:#575C5C;
+	text-decoration:none !important;
+}
+a:hover{
+	color:#94CF43;
+}
+img{
+	vertical-align:middle;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.main{
+	width:1000px;
+	margin:0 auto;
+}
+/******header的样式********/
+.header{
+	width:100%;
+	height:105px;
+	margin-top:50px;
+	margin-bottom:10px;
+}
+/*****当鼠标放上去，变大1.1倍*****/
+.transition_linear{
+	transition:all .5s linear;
+}
+.transition_linear:hover{
+	transform:scale(1.1);
+}
+/**************/
+#header{
+	width:100%;
+	height:220px;
+}
+#footer{
+	width:100%;
+	height:385px;
+}
+input{
+	outline:none;
+	border:0;
+}
+.box_shadow{
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/*分页*/
+.page-item.active .page-link {
+  z-index: 1 !important;
+  color: #fff !important;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+/*公共主题样式：边框阴影绿色*/
+.box-shadow-green{box-shadow: 5px 5px 5px rgba(148,207,67,.25);}
+.box-shadow-green-inset{box-shadow: 5px 5px 5px rgba(148,207,67,.85) inset;}

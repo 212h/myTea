@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+      <link rel="stylesheet" href="css/header_1.css">
+  <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div>
+    <div class="main">
+        <header>
+            <div>
+                <img src="img/form/logo.png" >
+                <span>欢迎注册</span>
+            </div>
+        </header>
+        <!--注册列表的背景图片-->
+        <div class="register_bgcolor">
+            <div class="register_container">
+                <!--<form action="" method="">-->
+                <div>
+                    <table>
+                        <thead>
+                            <th colspan="3">
+                                <div class="thead">
+                                    <span>新用户注册</span>
+                                    <a href="login.html">直接登陆</a>
+                                </div>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>用户名：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入用户名"  name="uname" id="uname"  class="uname" required >
+                                </td>
+                                <td>
+                                    <span class="vali_info">10个字符以内的字母、数字或下划线或汉字的组合</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>登陆密码：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入密码" name="upwd"  class="upwd" id="upwd" required>
+                                </td>
+                                <td>
+                                    <span class="vali_info">密码长度在6-12位之间</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>确认密码：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入密码" name="cpwd"  class="cpwd" id="cpwd" required>
+                                </td>
+                                <td>
+                                    <span class="vali_info">密码长度在6-12位之间,以字母、数字或下划线组合</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>邮箱：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入邮箱地址" name="email"  class="email" id="email" required>
+                                </td>
+                                <td>
+                                    <span class="vali_info">请输入合法的邮箱地址</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手机号：</td>
+                                <td>
+                                    <input type="text" placeholder="请输入您的手机号" name="phone"  class="phone" id="phone" required>
+                                </td>
+                                <td>
+                                    <span class="vali_info">请输入合法的手机号</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2">
+                                    <input type="button" value="提交注册信息" id="btn_register" class="register" style="cursor: pointer;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</div>
+
+<script src="js/ajax.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/register.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

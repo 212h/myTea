@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product_detail.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/header_1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/common_banner.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97"></script>
+    <style lang="">
+        #container{
+        height:600px;width:1000px;
+        box-shadow: 5px 5px 5px rgba(148,207,67,.25);
+        margin:0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--页面头部header-->
+        <header id="header"></header>
+        <!--上：banner图-->
+        <div id="common_banner"></div>
+
+        <div class="container p-5"></div>
+        <!--中：details-->
+        <!--中间商品详情-->
+        <div class="row pr-3">
+            <!--放大镜-->
+            <div id="preview" class="col pr-0">
+                <div class="card bg-transparent mr-5 position-absolute">
+                    <!--中图片-->
+                    <img class="card-img-top" src="img/product/md/2.png" alt="Card image cap">
+                    <!--半透明的遮罩层小方块,这个小方块可以跟着鼠标移动-->
+                    <div id="mask" class="position-absolute d-none"></div><!--鼠标进入中图片,mask显示,鼠标离开中图片,mask隐藏-->
+                    <!--最顶上的玻璃板，保护中图片和mask-->
+                    <div id="super-mask" class="position-absolute"></div><!--透明的等大小的div把下面的内容都保护住，这个div没有内容，没有图片，就是一个空白，那为什么还弄一个呢？保护mask和中图片-->
+                    <!--大图片-->
+                    <div id="div-lg" class="position-absolute d-none"></div><!--鼠标进入中图片,div-lg显示,鼠标离开中图片,div-lg隐藏-->
+                    <div class="card-body p-0 text-center">
+                        <img src="img/product_detail/hover-prev.png" class="btn float-left btn-light border-0 p-1 pt-4 pb-4 disabled">
+                        <div class="d-inline-block pt-2 mx-0 m-auto">
+                            <!-- 左边的下方一排小图片 -->
+                            <ul class="list-unstyled mb-0 ">
+                                <!--选择一个作为模板遍历动态添加
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/2.png" data-md="img/product/md/2.png" data-lg="img/product/lg/2.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1531810993.png" data-md="img/product/md/1531810993.png" data-lg="img/product/lg/1531810993.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1532070389.png" data-md="img/product/md/1532070389.png" data-lg="img/product/lg/1532070389.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1532077463.png" data-md="img/product/md/1532077463.png" data-lg="img/product/lg/1532077463.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1532349984.png" data-md="img/product/md/1532349984.png" data-lg="img/product/lg/1532349984.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1532350026.png" data-md="img/product/md/1532350026.png" data-lg="img/product/lg/1532350026.png">
+                                </li>
+                                <li class="float-left p-1">
+                                    <img src="img/product/sm/1532350182.png" data-md="img/product/md/1532350182.png" data-lg="img/product/lg/1532350182.png">
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                        <img src="img/product_detail/hover-next.png" class="btn float-right btn-light border-0 p-1 pt-4 pb-4">
+                    </div>
+                </div>
+            </div>
+            <!--右侧商品详情-->
+            <div id="details" class="col pl-0">
+                <!--模板
+                <h6 class="font-weight-bold">碧螺春茶</h6>
+                <h6>
+                    <a class="small text-dark font-weight-bold" href="javascript:;">新鲜的好茶，很好喝！</a>
+                </h6>
+                <div class="alert  small" role="alert">
+                    <div>
+                        <span>售价：</span>
+                        <h2 class="d-inline text-primary font-weight-bold">¥988.00</h2>
+                    </div>
+                    <div>
+                        <span>服务承诺：</span>
+                        <span>*退货补运费 *30天无忧退货 *48小时快速退款 *72小时发货</span>
+                    </div>
+                </div>
+                -->
+                <!-- 客服 -->
+                <p class="mb-1">
+                    <span class="small">客服：</span>
+                    <span class="small">联系客服</span>
+                    <img class="mb-3" src="img/product_detail/kefuf.gif">
+                </p>
+                <!-- 规格 -->
+                <div>
+                    <div class="float-left small">规格：</div>
+                    <div class="float-left w-75">
+                      <!--选其中一句作为模板，遍历动态加入
+                        <a class="btn btn-sm btn-outline-secondary active" href="product_details.html?lid=1" class="active">12斤</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="product_details.html?lid=2" class="">2斤</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="product_details.html?lid=3" class="">1斤</a>
+                        <a class="btn btn-sm btn-outline-secondary" href="product_details.html?lid=4" class="">3斤</a>
+                        -->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- 数量 -->
+                <div class="mt-2">
+                    <div class="float-left small">数量：</div>
+                    <div class="input-group mb-3 w-25">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary p-1 border " type="button">-</button>
+                        </div>
+                        <input type="text" value="1"  id="IPT" class="btn border border-muted px-0" placeholder="" aria-label="" aria-describedby="basic-addon1" >
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary p-1 border" type="button">+</button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- 购买部分 -->
+                <div id="shopCart">
+                    <a class="btn pt-3 pb-2 pl-5 pr-5" ><h5>立即购买</h5></a>
+                    <a class="btn btn-info pt-3">
+                        <h5><img src="img/product_detail/product_detail_img7.png"> 加入购物车</h5>
+                    </a>
+                    <a class="btn btn-info pt-1 pb-1"  class="collection">
+                        <img src="img/product_detail/product_detail_img6.png">
+                        <br>
+                        收藏
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-5 m-5"></div>
+        <!--百度地图-->
+        <div id="container" class="rounded"></div>
+        <!--下：img-->
+        <div class="do_product_detail container mb-5 p-4 pt-5" id="big_big_img">
+            <!--模板
+            <p></p>
+            <p>绿茶是我国产量最多的一类茶叶，全国18个产茶省（区）都生产绿茶。我国绿茶花色品种之多居世界之首，每年出口数万吨，占世界茶叶市场绿茶贸易量的70％左右。我国传统绿茶--眉茶和珠茶，向以香高、味醇、形美、耐冲泡，而深受国内外消费者的欢迎。</p>
+            <p>
+                <img src="img/product_detail/_jajcq800.png">
+            </p>
+            -->
+        </div>
+        <!--页面底部footer-->
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/ajax.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/common_banner.js"></script>
+    <script src="js/details.js"></script>
+    <script type="text/javascript"> 
+        var map = new BMap.Map("container");
+        var point = new BMap.Point(116.404177,39.909652);
+        map.centerAndZoom(point, 18);
+
+        //为百度地图添加控件
+        //导航控件
+        map.addControl(new BMap.NavigationControl());
+        //添加缩放控件
+        map.addControl(new BMap.ScaleControl());
+        //添加概览图控件
+        map.addControl(new BMap.OverviewMapControl());
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl());
+
+        //添加覆盖物
+        //1:创建覆盖物
+        var mk = new BMap.Marker(point);
+        //2:指定覆盖物类型[动画]
+        mk.setAnimation(BMAP_ANIMATION_BOUNCE);
+        //3:将覆盖添加地图
+        map.addOverlay(mk);
+        
+        // 自动获取你当前位置：经度和纬度
+        var geolocation = new BMap.Geolocation();
+        geolocation.getCurrentPosition(function(r){
+            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                var mk = new BMap.Marker(r.point);
+                map.addOverlay(mk);
+                map.panTo(r.point);
+                point = new BMap.Point(r.point.lng,r.point.lat);
+            }else {
+                point = new BMap.Point(116.331398,39.897445);
+            }        
+        });
+    </script>  
+</body>
+</html>

@@ -1,0 +1,79 @@
+/*****背景图片下的第一级div*****/
+div.bg_color>div{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	margin-top:90px;
+}
+/***背景图片**/
+div.bg_color{
+	background-image:url("../img/footer/bg_footer.jpg");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:98% 95%;
+	height:380px;
+	width:1459.2px;
+	margin:0 auto;
+	border:1px solid transparent;
+}	
+/**右边二维码***/
+div.bg_color>div>div>div.dimension_code>img{
+	width:100px;
+	height:100px;
+}
+/****左边：字体****/
+div.bg_color>div.main>div>p.font{
+	font-family:"华文行楷";
+	margin-top:15px;
+	font-size:18px;
+}
+/****背景内的第一个div******/
+div.bg_color>div.main>div:first-child{
+	width:300px;
+}
+/****背景内的第一个div******/
+div.bg_color>div>div:nth-child(2){
+	width:300px;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+}
+/****背景内的第二个div下的li******/
+div.bg_color>div>div:nth-child(2)>ul>li{
+	margin-top:10px;
+	text-align:center;
+}
+/****背景内的第二个div******/
+div.bg_color>div>div:nth-child(2)>ul>li>a>b{
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+}
+/***最后一个空div***/
+div.bg_color>div.main>div:last-child{
+	width:225px;
+}
+/*右下角广告弹出框*/
+#right_ad,#right_ad>a{
+	margin:0;padding:0;
+
+}
+#right_ad{
+	width:200px;height:200px;
+	position:fixed;
+	right:30px;
+	bottom:-200px;
+	background-color:LightBlue;
+	transition:all .5s linear;
+}
+#right_ad>a{
+	float:right;
+	padding:5px 10px;
+	border:1px solid gray;
+	cursor:pointer;
+}
+
+
+
+
+

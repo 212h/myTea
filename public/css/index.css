@@ -1,0 +1,273 @@
+/*背景图*/
+div.bgImg{
+	background-image:url(../img/index/bg1.jpg);
+	background-repeat:no-repeat;
+	background-size:1000px 1024px;
+	background-position:center center;
+	background-attachment:fixed;
+	border:2px solid #fff;
+
+}
+/*banner图*/
+div.bgImg>div.banner{
+	height:380px;
+	overflow:hidden;
+	position:relative;
+}
+div.bgImg>div.banner>ul.bannerImg>li{flow:left;}
+div.bgImg>div.banner>ul.bannerImg>li>a>img,img.banner_img{
+	width:1000px;
+	height:380px;
+}
+/*banner图上的左右按钮*/
+div.bgImg>div.banner>a.ckSide{
+	width:35px;
+	height:70px;
+	border-radius:3px;
+	background:#6EBC24; /*调试*/
+	position:absolute;
+	top:155px;
+}
+/*banner图上的左右箭头图标*/
+div.bgImg>div.banner>a.ckLeft{
+	left:5px;
+	background:transparent url(../img/index/banner/arrowLeft.png) no-repeat center center;
+}
+div.bgImg>div.banner>a.ckRight{
+	right:15px;
+	background:transparent url(../img/index/banner/arrowRight.png) no-repeat center center;
+}
+div.bgImg>div.banner>ul.ind{
+	position:absolute;
+	bottom:30px;
+	left:450px;
+}
+div.bgImg>div.banner>ul.ind>li{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#fff;
+	float:left;;
+	margin-right:8px;
+}
+div.bgImg>div.banner>ul.ind>li.active{
+	background:#6EBC24;
+	opacity:0.9;
+}
+/*楼层一茶叶种类背景*/
+div.list{
+	background:#fff;
+}
+div.list>div{
+	width:1000px;
+	height:210px;
+	border:2px solid #fff;        /*调试***************************************************************/
+}
+div.list>div>div:first-child{
+	width:250px;
+	height:120px;
+	margin-top:50px;
+	float:left;
+	border:1px solid #fff;
+}
+div.list>div>div:first-child>p:first-child{
+	font-weight:bold;
+	font-family: "华文行楷";
+	font-size:26px;
+	color:#000;
+	opacity:0.8;
+}
+div.list>div>div:first-child>p:last-child{
+	font-weight:bold;
+	font-family:"华文新魏";
+	font-size:16px;
+	margin-top:30px;
+	margin-left:15px;
+}
+div.list>div>div:nth-child(2){
+	width:430px;
+	height:120px;
+	margin-top:50px;
+	float:right;
+	border:1px solid #fff;
+}
+div.list>div>div:last-child>ul{
+	display:flex;
+	justify-content:space-between;
+	font-size:16px;
+	line-height:40px;
+}
+div.list>div>div:last-child>ul>li>a>span{
+	display:inline-block;
+	width:72px;
+	height:40px;
+	text-align:center;
+	transition:all .5s linear;
+	border-radius:3px;
+	border:1px solid #fff;
+}
+div.list>div>div:last-child>ul>li>a>span:hover{
+	background-color:#94cf43;
+	color:#fff;
+}
+/***********茶叶种类的，1F，6张图片****************/
+div.imgContain{
+	border:1px solid #fff;
+	background:#fff;
+	width:1000px;
+	height:600px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	border:1px solid #fff;
+}
+div.imgContain>div{
+	border:1px solid #d6d6d6;
+	width:305px;
+	height:280px;
+	margin:5px;
+	transition:all .5s linear;
+}
+div.imgContain>div:hover{
+	border:1px solid #94CF43;
+}
+div.imgContain>div>img{
+	 display:block;
+	 margin:0 auto;
+	 width:270px;
+	 height:156px;
+	 margin-top:13px;
+	 transition:all .5s linear;
+	 border:1px solid #fff;
+ }
+div.imgContain>div>img:hover{
+	transform:scale(1.1);
+}
+div.imgContain>div>div:last-child{
+	width:285px;
+	height:87px;
+	line-height:40px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:15px;
+	font-size:22px;
+	border:1px solid #fff;
+}
+div.imgContain>div>div:last-child>a{
+	width:288px;
+	height:87px;
+	display:block;
+	border:2px dotted #fff;
+}
+/*************楼层二*******************************/
+div.floorTwo{
+	width:1000px;
+	height:520px;
+	border:1px solid #fff;
+}
+div.floorTwo>div{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	background:#fff;
+	margin-top:100px;
+}
+div.floorTwo>div>img:first-child{
+	width:380px;
+	height:248px;
+	display:block;
+}
+div.floorTwo>div>div{
+	height:248px;
+	width:580px;
+	padding:50px;
+	box-sizing:border-box;
+	font-size:20px;
+	font-family:"华文行楷";
+	border:1px solid #fff;
+}
+div.floorTwo>div>div>p:last-child>a{
+	font-family:normal;
+	display:inline-block;
+	width:90px;
+	height:38px;
+	background:#000;
+	border-radius:2px;
+	text-align:center;
+	line-height:38px;
+	font-weight:bold;
+	transition:all .5s linear;
+	color:#fff;
+	margin-top:10px;
+}
+div.floorTwo>div>div>p:last-child>a:hover{
+	opacity:0.5;
+}
+/****************楼层三*************************/
+div.imgThree_prev{
+	width:1000px;
+	height:602px;
+	background:#fff;
+}
+div.imgThree{
+	width:1000px;
+	height:600px;
+	background:#fff;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	z-index:10;
+	margin:0 auto;
+}
+div.imgThree>div{
+	width:1000px;
+	height:410px;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	margin-top:100px;
+	overflow:hidden;
+}
+
+div.imgThree>div>a>img:first-child{
+	  width:401px;
+	  transition:all .5s linear;
+	overflow:hidden;
+
+  }
+div.imgThree>div>a>img:first-child:hover{
+	transform:scale(1.8);
+}
+
+div.imgThree>div>img:last-child{
+	width:598.96px;
+	z-index:10;
+}
+
+/*定制电梯按钮的样式*/
+#main>.btn-group-vertical{
+  top:100px;
+  left:10px;
+}
+#main>.btn-group-vertical>.btn-secondary:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+/*鼠标放上去边框阴影*/
+div.border_shadow:hover{
+	box-shadow: 5px 5px 5px rgba(148,207,67,.25) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

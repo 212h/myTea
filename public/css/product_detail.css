@@ -1,0 +1,136 @@
+/*中：details*/
+div.product_details{
+    width:100%;
+    height:481px;
+    display:flex;
+    flex-wrap:wrap;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    margin-top:30px;
+}
+
+/*左侧的外层div*/
+div.image{
+    width:520px;
+    height:614px;
+}
+div.image_top{
+    width:520px;
+    height:340px;
+}
+div.image_top>img{
+    width:520px;
+    height:340px;
+}
+div.image>.image_bottom{
+    width:520px;
+    height:94px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+div.image_bottom>img{
+    width:130px;
+    height:94px;
+    margin-right:26px;
+    margin-top:20px;
+}
+div.image_bottom>img.view{
+    opacity: .4;
+}
+/*右侧div*/
+.img_details_right{
+    width:436px;
+    height:434px;
+}
+.img_details_right>h1{
+    border-bottom:1px solid #eee;
+    color:#575C5C;
+    font-weight:normal;
+    font-size:36px;
+    margin:20px 0;
+    padding-bottom:20px;
+    box-sizing: border-box;
+}
+.img_details_right>div.middle>span{
+    display:inline-block;
+}
+.img_details_right>div.middle>span:first-child{
+    font-size:14px;
+}
+.img_details_right>div.middle>span:last-child{
+    font-size:22px;
+    color:#ff720b;
+    font-weight:bold;
+    margin:30px 0;
+}
+.img_details_right>div.bottom{
+    height:23px;
+    line-height:23px;
+    vertical-align:middle;
+}
+
+/*定制规格参数按钮的颜色*/
+#details>div:nth-child(5)>div .btn-outline-secondary:hover{
+  color:gray;
+  background-color:rgba(228,57,60,.5);
+  border-color:rgba(228,57,60,.15);
+}
+#details>div:nth-child(5)>div .btn-outline-secondary.active{
+  color:gray;
+  background-color:rgba(228,57,60,.5);
+  border-color:rgba(228,57,60,.15);
+  border-width:2px;
+}
+/*定制数量按钮的颜色*/
+#details>div:nth-child(6) .btn-outline-secondary{
+  width:30px;
+}
+#details>div:nth-child(6) .btn-outline-secondary:hover,
+#details>div:nth-child(6) .btn-outline-secondary:active,
+#details>div:nth-child(6) .btn-outline-secondary:focus{
+  color:#6c757d;
+  background-color:#f5f5f5;
+  border-color:#0069d9;
+  box-shadow: none;
+}
+/*定制立即购买按钮背景色*/
+#details>div:nth-child(7)>a:first-child{
+  background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+
+/*定制放大镜样式*/
+#preview>.card>.card-body>div{
+  width:248px;/*盛放小图片的ul的外层div的宽度*/
+  overflow:hidden;
+}
+#preview>.card>.card-body>div>ul{/*ul的宽度动态加载，因为ul里到底有多少图片谁也不知道将来要多少*/
+  transition:all .5s linear;/*点按钮让ul动，所以对ul加transition*/
+}
+#preview>.card>.card-body>div>ul>li{
+  width:62px; height:62px;/*每个小图片外面的li的宽度*/
+}
+#preview>.card>.card-body>div>ul img{/*小图片*/
+  width:52px; height:52px;/*图片的宽自己限定死！他的图片无论多大，宽都是52px;!每个小图片的宽度,即使美工设计好了，也要自己限定以下，万一后期美工图片宽度变了呢？掌握在自己手里，宽限定死*/
+}
+#preview>.card>.card-body>div>ul img:hover{
+  border:1px solid #e4393c;
+}
+#preview>div>img{width:352px}/*中图片*中图片的宽自己限定死！他的图片无论多大，宽都是354px;!*/
+#mask{
+  width:176px; height:176px; /* 176*2=352  176/2=88 */
+  background-color:#ffa;
+  opacity:.5;
+}
+#super-mask{
+  width:352px; height:352px;
+}
+#div-lg{
+  width:400px; height:400px; /**/
+  left:352px;
+  z-index:1000;
+  border: 1px solid rgba(0, 0, 0, 0.125)
+}
+/*input商品数量*/
+#IPT{
+  width:40px !important;
+}

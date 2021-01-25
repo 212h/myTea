@@ -1,0 +1,91 @@
+
+
+/*上_外层div：冲泡方法标题概述*/
+div.method_contain_top{
+    margin-top:100px;
+    border-bottom:1px solid #eee;
+    width:960px;
+    height:58px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+/*上左内层div：冲泡方法标题概述*/
+div.method_contain_top>div.method_top_left{
+    width:350px;
+    height:56px;
+}
+div.method_contain_top>div.method_top_left>span{
+    display:inline-block;
+    font-size:24px;
+}
+/*上右内层div：冲泡方法标题概述*/
+div.method_contain_top>div.method_top_right{
+    width:490px;
+    height:56px;
+}
+div.method_contain_top>div.method_top_right>p{
+    line-height:21px;
+}
+
+/*下：冲泡方法详情___外层div*/
+div.method_contain_bottom{
+    width:960px;
+    height:565px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    font-family:"华文新魏";
+    margin-bottom:100px;
+}
+/*下_左：冲泡方法详情,下_右：冲泡方法详情-------共同样式*/
+div.method_contain_bottom>div.method_contain_bottom_left,div.method_contain_bottom>div.method_contain_bottom_right{
+    width:475px;
+    height:561px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div,div.method_contain_bottom>div.method_contain_bottom_right>div{
+    width:475px;
+    height:115px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    margin-top:30px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div:first-child,div.method_contain_bottom>div.method_contain_bottom_right>div>div:last-child{
+    width:360px;
+    height:109px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div:last-child,div.method_contain_bottom>div.method_contain_bottom_right>div>div:first-child{
+    width:110px;
+    height:110px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div>p:first-child,div.method_contain_bottom>div.method_contain_bottom_right>div>div:last-child>p:first-child{
+    font-size:24px;
+    margin-bottom:10px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div>p:last-child,div.method_contain_bottom>div.method_contain_bottom_right>div>div:last-child>p:last-child{
+    line-height:20px;
+    font-size:16px;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div:last-child>img,div.method_contain_bottom>div.method_contain_bottom_right>div>div:first-child>img{
+    width:85%;
+    display:flex;
+    margin:0 auto;
+    margin-top:40px;
+    filter:grayscale(1);
+    transition:all .3s;
+}
+div.method_contain_bottom>div.method_contain_bottom_left>div>div:last-child>img:hover,div.method_contain_bottom>div.method_contain_bottom_right>div>div:first-child>img:hover{
+    filter:none;
+}
+/*下_右：冲泡方法详情里面的空span*/
+div.method_contain_bottom>div.method_contain_bottom_right>span{
+    display:block;
+    width:356px;
+    height:60px;
+}
+
+
+
+
+

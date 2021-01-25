@@ -1,0 +1,169 @@
+/**顶部：logo,搜索框,登陆注册的列表,外面的div**/
+ .header_top{
+	margin-top:60px;
+ }
+ /********************中间搜索框外面的div***********************/
+ #header>nav:first-child>div:nth-child(2){
+	width:410px;
+	height:37px;
+	border:1px solid #94CF43;
+	/*margin-left:20px;
+	margin-right:50px;*/
+	border-radius:2px;
+}
+
+/*********放大镜**********/
+.header_top div img.search_img{
+	width:30px;
+	height:30px;
+	float:right;
+	margin:2px;
+}
+.header_top div img.search_img:hover{
+	cursor:pointer;
+}
+/******搜索框********/
+.header_top div .txt_search{
+	width:280px;
+	height:32px;
+	outline:none;
+	border:0;
+	background:#fff;
+	color:#757575;
+	margin-left:10px;
+}
+/*********分类搜索**********/
+.header_top div a.sort_search{
+	color:#c3c3c3;
+	font-size:14px;
+}
+/*******倒三角*********/
+.header_top div span.caret{
+	border:6px solid transparent;
+	border-top-color:#bbb;
+	float:right;
+	margin:14px 3px;
+}
+.header_top ul.list{
+	margin-right:0px;
+	width:300px;
+	padding-right:0px;
+	box-sizing:border-box;
+}
+/****顶部：logo,搜索框,登陆注册的列表,变成行内快****/
+.header_top ul.list,.header_top div,.header_top a.logo{
+	display:inline-block;
+}
+
+/******************************下面一排的页面主导航*********************/
+ul.nav{
+	margin-top:33px;
+	position:relative;
+	z-index:1000;
+}
+
+/*****页面主导航的a标签******/
+ul.nav li a{
+	font-weight:bold;
+	color:#ccc;
+	font-size:14px;
+}
+/*****页面主导航的a标签******/
+ul.nav li a:hover{
+	color:#94CF43;
+}
+/*****页面主导航的li******/
+ul.nav li{
+	display:inline-block;
+	margin-left:50px;
+}
+/*****主导航的 首页 外div*****/
+ul.nav li .contain_1{
+	width:34px;
+	height:25px;
+	position:relative;
+}
+/*****主导航的 茶叶品牌 外div*****/
+ul.nav li .contain_2{
+	width:64px;
+	height:25px;
+}
+/*****主导航的 game 外div*****/
+ul.nav li .contain_game{
+	width:80px;
+	height:25px;
+}
+/*****主导航 首页 的a标签*****/
+ul.nav>li>div>a.index{
+	display:inline-block;
+	margin-left:2px;
+}
+/******下拉列表单独修饰********/
+ul.nav>li>div>div{
+	display:none;
+	position:absolute;
+	font-size:12px;
+	margin:0 auto;
+	color:#94CF43;
+}
+/*****主导航下拉菜单*****/
+ul.nav>li>div>.hover_1{
+	width:34px;
+	height:36px;
+	padding-top:5px;
+}
+/*****主导航下拉菜单*****/
+ul.nav>li>div>.hover_2>ul{
+	width:100px;
+	height:150px;
+	border-radius:4px;
+	position:absolute;
+	left:-18px;
+}
+/*****主导航下拉菜单 的茶叶品牌 的下拉列表*****/
+ul.nav>li>div>.hover_2>ul>li{
+	display:block;
+	width:100px;
+	height:36px;
+	margin:0 auto;
+	padding-top:8px;
+	box-sizing:border-box;
+	border-radius:3px;
+}
+/*****主导航下拉菜单 的茶叶品牌 的下拉列表 鼠标放上去效果*****/
+ul.nav>li>div>.hover_2>ul>li:hover{
+	color:#94CF43;
+}
+/*****主导航下拉菜单 的茶叶品牌 *****/
+ul.nav>li>div>.hover_2>div{
+	border-bottom:2px solid #94CF43;
+	width:64px;
+	height:38px;
+	margin-left:-4px;
+	padding-left:3px;
+	box-sizing:border-box;
+	padding-top:5px;
+}
+/****当鼠标放在 首页 主导航上的显示效果******/
+.contain_1:hover .hover_1{
+	display:block;
+	border-bottom:2px solid #94CF43;
+}
+/*****主导航下拉菜单 的冲泡方法 *****/
+ul.nav>li>div>.hover_3>div{
+	border-bottom:2px solid #94CF43;
+	width:64px;
+	height:38px;
+	padding-left:8px;
+	box-sizing:border-box;
+	margin-left:-3px;
+	padding-top:5px;
+}
+/****当鼠标放在 冲泡方法 的显示效果******/
+.contain_2:hover .hover_3{
+	display:block;
+}
+/****当鼠标放在 game 的显示效果******/
+.contain_game:hover .hover_3{
+	display:block;
+}

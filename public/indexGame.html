@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/header_1.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <style>
+        body{padding-top:10px;}
+        .all_bg{
+            width:800px;height:600px;margin:0px auto;
+        }
+        #allcanvas{
+            position: relative;
+            width:800px;height:600px;
+            margin: 0px;
+        }
+        #canvas1{position: absolute;width:800px;height:600px;z-index: 1;bottom:0;left:0;}
+        #canvas2{position: absolute;width:800px;height:600px;z-index: 0;bottom:0;left:0;}
+      </style>
+  </head>
+  <body>
+      <div class="main" >
+          <!--页面头部header-->
+          <header id="header"></header>
+      </div>
+      <div class="all_bg">
+          <div id="allcanvas">
+              <canvas id="canvas1" width="800" height="600"></canvas>
+              <canvas id="canvas2" width="800" height="600"></canvas>
+          </div>
+      </div>
+      <footer id="footer"></footer>
+      <script src="jsGame/commonFunctions.js"></script>      
+      <script src="jsGame/background.js"></script>
+      <script src="jsGame/ane.js"></script>
+      <script src="jsGame/fruit.js"></script>
+      <script src="jsGame/mom.js"></script>      
+      <script src="jsGame/main.js"></script>
+      <script src="jsGame/collsion.js"></script> 
+      <script src="jsGame/baby.js"></script> 
+      <script src="jsGame/data.js"></script>
+      <script src="jsGame/wave.js"></script>   
+      <script src="jsGame/halo.js"></script>
+      <script src="jsGame/dust.js"></script>
+      
+      <script src="js/ajax.js"></script>
+      <script src="js/header.js"></script>
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/footer.js"></script>
+      
+  </body>
+</html>
